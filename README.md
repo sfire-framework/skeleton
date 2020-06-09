@@ -3,13 +3,13 @@ Requires PHP 7.4 or later; we recommend using the latest PHP version whenever po
 
 
 ### Current version
-The current version is 1.1.0
+The current version is 1.0.0
 
 
 ### Installation
 Run the following to install this library:
 ```
-$ composer require sfire-framework/bootstrap
+$ composer create-project sfire-framework/skeleton
 ```
 
 ### Documentation
