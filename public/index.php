@@ -9,7 +9,7 @@
 
 declare(strict_types=1);
 
-use sFire\Bootstrap\Boot\Bootstrap;
+use sFire\Bootstrap\Boot;
 
 $autoloaderFile = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
@@ -18,5 +18,5 @@ if(false === file_exists($autoloaderFile)) {
 }
 
 $autoloader = require_once($autoloaderFile);
-$boot = new Bootstrap($autoloader);
+$boot = new Boot($autoloader);
 $boot -> exec();
