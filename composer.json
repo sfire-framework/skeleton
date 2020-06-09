@@ -20,7 +20,7 @@
     },
     "require": {
         "php": ">=7.4",
-        "sfire-framework/sfire-mvc": "1.0.*"
+        "sfire-framework/sfire-bootstrap": "1.0.*"
     },
     "autoload": {
         "psr-4": {
