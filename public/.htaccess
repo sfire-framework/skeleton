@@ -1,0 +1,20 @@
+<ifModule mod_rewrite.c>
+	RewriteEngine On
+
+	#Index
+	RewriteCond	%{REQUEST_FILENAME} !-f
+	RewriteRule (.*)$ index.php [L]
+</ifModule>
+
+<ifModule mod_header.c>
+	<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|mp3|ogg|woff)(\.gz)?$">
+		Header set Expires 'access plus 1 year'
+		Header unset ETag
+		FileETag None
+	</FilesMatch> 
+</ifModule>
+
+#Error documenten:
+ErrorDocument 401 /401
+ErrorDocument 403 /403
+ErrorDocument 404 /404

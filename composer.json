@@ -1,0 +1,30 @@
+{
+    "name": "sfire-framework/skeleton",
+    "description": "Skeleton application using the sFire Framework MVC layer and module packages.",
+    "type": "project",
+    "keywords": [
+        "framework",
+        "mvc",
+        "sfire",
+        "skeleton",
+        "bootstrap"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "Kris Kuiper",
+        "email": "kris@sfire.io"
+    }],
+    "homepage": "https://sfire.io",
+    "support": {
+        "docs": "https://sfire.io/docs"
+    },
+    "require": {
+        "php": ">=7.4",
+        "sfire-framework/sfire-mvc": "1.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "sFire\\Config\\": "config/"
+        }
+    }
+}
